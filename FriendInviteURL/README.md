@@ -1,4 +1,6 @@
 # Friend Invite URL
+**NOTE:** This plugin *does* access a discord feature that, to this date, has no UI made for it. It could be removed or changed at any time
+
 This plugin adds a button to copy a friend invite url, which can be sent to other users to click on.
 Users clicking on this link will add you as a friend, even if you disabled friend requests completely.
 
