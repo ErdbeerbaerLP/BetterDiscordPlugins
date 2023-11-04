@@ -2,7 +2,7 @@
  * @name Friend Invite URL
  * @author ErdbeerbaerLP
  * @description Adds a button to quickly copy your friend url. You can send said url to others, so they can add you as a friend, even if you disabled friend requests entirely
- * @version 1.0.0
+ * @version 1.0.1
  * @invite f9uKgQjyhJ
  * @donate https://paypal.me/erdbeerbaerlp
  * @source https://github.com/ErdbeerbaerLP/BetterDiscordPlugins/blob/master/FriendInviteURL/FriendInviteURL.plugin.js
@@ -25,7 +25,7 @@ const button = document.createElement("div", {"id": "friendURL"}).appendChild(te
 const handleMutation = (mutationsList, observer) => {
     for (const mutation of mutationsList) {
         if (mutation.type === 'childList') {
-            const deeplyNestedChild = document.querySelector('.addFriend-emTWY1');
+            const deeplyNestedChild = document.querySelector('.addFriend__80542');
             if (deeplyNestedChild) {
                 if (!deeplyNestedChild.parentNode.contains(button)) {
                     button.setAttribute("class", deeplyNestedChild.getAttribute("class"))
